@@ -119,10 +119,8 @@
         <div>
           <h2>Book help</h2>
           <p>Tell us what you need and we’ll get back to you quickly. Or call/text for faster response.</p>
-          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-            <input type="hidden" name="form-name" value="contact">
-            <input type="hidden" name="redirect" value="/thank-you.html">
-            <p style="display:none;"><label>Don’t fill this out if you’re human: <input name="bot-field" /></label></p>
+          <form name="contact" method="POST" action="/thank-you.html" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact"><p style="display:none;"><label>Don’t fill this out if you’re human: <input name="bot-field" /></label></p>
             <div style="display:grid;gap:12px;grid-template-columns:1fr 1fr">
               <div><label for="name">Name</label><input id="name" name="name" required placeholder="Your name"/></div>
               <div><label for="email">Email</label><input id="email" name="email" type="email" required placeholder="you@example.com"/></div>
@@ -190,5 +188,18 @@
     })();
   </script>
   <script src="assets/cookie-consent.js"></script>
+
+<script>
+  (function () {
+    var onGithub = location.hostname.endsWith('.github.io');
+    if (!onGithub) return;
+    var f = document.querySelector('form[name="contact"]');
+    if (!f) return;
+    f.outerHTML = '<p><strong>Contact:</strong> ' +
+      '<a href="mailto:sean.techmate@outlook.com">sean.techmate@outlook.com</a> ' +
+      'or call <a href="tel:+447446343827">07446 343827</a>.</p>';
+  })();
+</script>
+
 </body>
 </html>
