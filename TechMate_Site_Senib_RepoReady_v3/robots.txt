@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://Senib.github.io/TechMate/sitemap.xml
