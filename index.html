@@ -1,108 +1,158 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TechMate — Friendly Local Tech Help | Simple. Secure. Sorted.</title>
   <meta name="description" content="TechMate helps households in Houghton Regis, Dunstable, Luton & Leighton Buzzard with device setup, Wi‑Fi security, cloud backups, screen repairs, and 30‑min lessons. Seniors & students 10% off. Subscriptions from £4.99/mo.">
-  <meta name="robots" content="index,follow">
   <link rel="icon" href="assets/favicon.ico">
   <link rel="canonical" href="https://Senib.github.io/TechMate/">
-
-  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="TechMate — Friendly Local Tech Help">
   <meta property="og:description" content="Simple. Secure. Sorted. Affordable tech help: setup, Wi‑Fi security, cloud restores, lessons.">
   <meta property="og:image" content="assets/preview.png">
   <meta property="og:url" content="https://Senib.github.io/TechMate/">
   <meta property="og:site_name" content="TechMate">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="TechMate — Friendly Local Tech Help">
-  <meta name="twitter:description" content="Simple. Secure. Sorted. Affordable tech help: setup, Wi‑Fi security, cloud restores, lessons.">
-  <meta name="twitter:image" content="assets/preview.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
   <header>
-    <div class="logo">
-      <img src="assets/logo.png" alt="TechMate Logo">
-    </div>
-    <div class="cta-header">
-      <a href="tel:07446343827" class="btn">Call/Text 07446 343827</a>
+    <div class="container nav">
+      <div class="brand">
+        <img src="assets/logo.png" alt="TechMate logo">
+        <div class="brand-title">TechMate</div>
+      </div>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#subscriptions">Subscriptions</a></li>
+          <li><a href="#discounts">Trust</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="cta" href="tel:+447446343827">📞 07446 343827</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <section class="hero">
-    <h1>Friendly, affordable tech help for local households</h1>
-    <p>Simple. Secure. Sorted.</p>
-    <div class="hero-buttons">
-      <a href="tel:07446343827" class="btn primary">📞 Call Now</a>
-      <a href="mailto:sean.techmate@outlook.com" class="btn secondary">✉️ Email Us</a>
-    </div>
-  </section>
-
-  <section class="services">
-    <h2>Our Services</h2>
-    <div class="card-grid">
-      <div class="card"><h3>Device Setup</h3><p>Phones/TVs/Printers/Tablets</p><strong>£10–40</strong></div>
-      <div class="card"><h3>Wi‑Fi Security & Optimisation</h3><p>Harden your home network</p><strong>£40</strong></div>
-      <div class="card"><h3>Cloud Backup Restore</h3><p>Recover photos & contacts</p><strong>£15–40</strong></div>
-      <div class="card"><h3>Screen Repair</h3><p>Quality parts, clear pricing</p><strong>Market‑based</strong></div>
-      <div class="card"><h3>30‑min Tech Lesson</h3><p>Email, web safety, banking apps</p><strong>£20</strong></div>
-    </div>
-  </section>
-
-  <section class="subscriptions">
-    <h2>Subscriptions</h2>
-    <div class="card-grid">
-      <div class="card">
-        <h3>Mini</h3>
-        <p>£4.99 / mo</p>
-        <p>3 fixes + 2×10‑min consults</p>
-        <em>10% off yearly</em>
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <h1>Friendly, affordable tech help for local households</h1>
+          <p>Simple. Secure. Sorted. Serving Houghton Regis, Dunstable, Luton & Leighton Buzzard.</p>
+          <div class="badges" role="list">
+            <span class="badge">DBS Checked</span>
+            <span class="badge">Fully Insured</span>
+            <span class="badge">Transparent Pricing</span>
+          </div>
+          <div style="margin-top:1.25rem;display:flex;gap:.6rem;flex-wrap:wrap">
+            <a class="btn" href="tel:+447446343827">Call / Text 07446 343827</a>
+            <a class="btn alt" href="mailto:sean.techmate@outlook.com">Email Us</a>
+          </div>
+        </div>
+        <div class="hero-card" aria-label="Services highlight">
+          <strong>Popular this week</strong>
+          <ul style="margin:.5rem 0 0 1.2rem">
+            <li>New phone & smart‑TV setup</li>
+            <li>Wi‑Fi security & optimisation</li>
+            <li>Cloud backup restore</li>
+          </ul>
+          <p class="badge" style="display:inline-block;margin-top:.5rem">Seniors & students: 10% off</p>
+        </div>
       </div>
-      <div class="card">
-        <h3>Plus</h3>
-        <p>£9.99 / mo</p>
-        <p>4 fixes + 2×10‑min consults + annual security check</p>
-        <em>10% off yearly</em>
+    </section>
+
+    <section id="services" class="section light">
+      <div class="container">
+        <h2>Services & Prices</h2>
+        <p class="mini">Clear, affordable pricing. Travel included within local area.</p>
+        <div class="grid cols-3" style="margin-top:16px">
+          <article class="card"><h3>Device Setup</h3><p>Phones, smart TVs, printers, tablets — set up and ready to go.</p><div class="price">£10–40</div></article>
+          <article class="card"><h3>Wi‑Fi Security & Optimisation</h3><p>Harden your home network & improve coverage for IoT devices.</p><div class="price">£40</div></article>
+          <article class="card"><h3>Cloud Backup Restore</h3><p>Recover photos, contacts and files from iCloud/Google/OneDrive.</p><div class="price">£15–40</div></article>
+          <article class="card"><h3>Screen Repair</h3><p>Quality parts, fair market pricing. Quote provided upfront.</p><div class="price">Market‑based</div></article>
+          <article class="card"><h3>30‑min Tech Lesson</h3><p>Email, safe web browsing, banking apps & spotting scams.</p><div class="price">£20</div></article>
+          <article class="card"><h3>On‑site Help</h3><p>Home visits available across Houghton Regis & nearby areas.</p><span class="badge">Seniors & students: 10% off</span></article>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="trust">
-    <h2>Why Choose Us?</h2>
-    <p>✅ DBS checked &nbsp; | &nbsp; ✅ Fully insured &nbsp; | &nbsp; ✅ Joining Ombudsman & Checkatrade</p>
-    <p><strong>Students & Seniors: 10% OFF all services</strong></p>
-  </section>
+    <section id="subscriptions" class="section">
+      <div class="container">
+        <h2>Subscriptions — stress‑free support</h2>
+        <p class="mini">Pay monthly, get priority help. 10% off when paid yearly.</p>
+        <div class="pricing" style="margin-top:16px">
+          <div class="plan">
+            <div class="amount">£4.99<span style="font-size:.9rem;font-weight:700">/mo</span></div>
+            <h3 style="margin:.25rem 0 .5rem">TechMate Mini</h3>
+            <ul><li>3 fixes included</li><li>2× 10‑min consultations/learning sessions</li><li>Priority booking</li></ul>
+            <div class="save">10% off yearly</div>
+          </div>
+          <div class="plan popular">
+            <div class="amount">£9.99<span style="font-size:.9rem;font-weight:700">/mo</span></div>
+            <h3 style="margin:.25rem 0 .5rem">TechMate Plus</h3>
+            <ul><li>4 fixes included</li><li>2× 10‑min consultations/learning sessions</li><li>1 yearly security check</li></ul>
+            <div class="save">10% off yearly</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <section class="area">
-    <h2>Service Area</h2>
-    <p>Houghton Regis (Thorn & Linmere), Dunstable, Luton, and Leighton Buzzard.</p>
-  </section>
+    <section id="discounts" class="section light">
+      <div class="container">
+        <h2>Community first</h2>
+        <div class="badges" style="margin-top:8px">
+          <span class="badge">Seniors & Students — 10% off all services</span>
+          <span class="badge">DBS Checked</span>
+          <span class="badge">Fully Insured</span>
+          <span class="badge">Ombudsman & Checkatrade (joining)</span>
+        </div>
+      </div>
+    </section>
 
-  <section class="contact">
-    <h2>Contact Us</h2>
-    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-      <input type="hidden" name="form-name" value="contact">
-      <input type="hidden" name="redirect" value="/thank-you.html">
-      <p style="display:none;"><label>Don’t fill this out if you’re human: <input name="bot-field" /></label></p>
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn primary">Send</button>
-    </form>
-    <p>Prefer email? <a href="mailto:sean.techmate@outlook.com?subject=TechMate%20enquiry">sean.techmate@outlook.com</a> &nbsp; | &nbsp; 📱 07446 343827</p>
-  </section>
+    <section id="contact" class="section">
+      <div class="container contact">
+        <div>
+          <h2>Book help</h2>
+          <p>Tell us what you need and we’ll get back to you quickly. Or call/text for faster response.</p>
+          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact">
+            <input type="hidden" name="redirect" value="/thank-you.html">
+            <p style="display:none;"><label>Don’t fill this out if you’re human: <input name="bot-field" /></label></p>
+            <div style="display:grid;gap:12px;grid-template-columns:1fr 1fr">
+              <div><label for="name">Name</label><input id="name" name="name" required placeholder="Your name"/></div>
+              <div><label for="email">Email</label><input id="email" name="email" type="email" required placeholder="you@example.com"/></div>
+            </div>
+            <div style="margin-top:12px"><label for="msg">How can we help?</label><textarea id="msg" name="message" required placeholder="e.g. Set up new iPhone and restore iCloud backup"></textarea></div>
+            <div style="margin-top:14px;display:flex;gap:.6rem;flex-wrap:wrap">
+              <button class="btn" type="submit">Send request</button>
+              <a class="btn alt" href="tel:+447446343827">Call / Text instead</a>
+            </div>
+          </form>
+        </div>
+        <aside class="card" aria-label="Direct contact details">
+          <h3>Direct contact</h3>
+          <p><strong>Phone:</strong> <a href="tel:+447446343827">07446 343827</a><br>
+          <strong>Email:</strong> <a href="mailto:sean.techmate@outlook.com">sean.techmate@outlook.com</a></p>
+          <p class="mini">Service area: Houghton Regis (Thorn & Linmere), Dunstable, Luton, Leighton Buzzard.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <img src="assets/logo.png" alt="TechMate Logo" class="footer-logo">
-    <p><a href="/privacy.html">Privacy Policy</a> | <a href="/terms.html">Terms of Service</a> | <a href="#" onclick="openCookieSettings();return false;">Cookie Settings</a></p>
-    <p class="mini">Trust badges: DBS Checked • Fully Insured • Ombudsman • Checkatrade (joining)</p>
-    <p>© 2025 TechMate. All rights reserved.</p>
+    <div class="container foot">
+      <div class="brand"><img src="assets/logo.png" alt="TechMate logo"><div class="brand-title">TechMate</div></div>
+      <div class="mini">
+        <a href="/privacy.html">Privacy Policy</a> • <a href="/terms.html">Terms of Service</a> • <a href="#" onclick="openCookieSettings();return false;">Cookie Settings</a>
+        <br>Trust badges: DBS Checked • Fully Insured • Ombudsman • Checkatrade (joining)
+        <br>© 2025 TechMate. Friendly fixes. Secure solutions.
+      </div>
+    </div>
   </footer>
 
   <script type="application/ld+json">

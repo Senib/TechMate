@@ -1,58 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TechMate — Friendly Local Tech Help | Simple. Secure. Sorted.</title>
   <meta name="description" content="TechMate helps households in Houghton Regis, Dunstable, Luton & Leighton Buzzard with device setup, Wi‑Fi security, cloud backups, screen repairs, and 30‑min lessons. Seniors & students 10% off. Subscriptions from £4.99/mo.">
-  <meta name="robots" content="index,follow">
   <link rel="icon" href="assets/favicon.ico">
   <link rel="canonical" href="https://Senib.github.io/TechMate/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="TechMate — Friendly Local Tech Help">
+  <meta property="og:description" content="Simple. Secure. Sorted. Affordable tech help: setup, Wi‑Fi security, cloud restores, lessons.">
+  <meta property="og:image" content="assets/preview.png">
+  <meta property="og:url" content="https://Senib.github.io/TechMate/">
+  <meta property="og:site_name" content="TechMate">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
   <header>
-    <div class="logo"><img src="assets/logo.png" alt="TechMate Logo"></div>
-    <div class="cta-header"><a href="tel:07446343827" class="btn">Call/Text 07446 343827</a></div>
+    <div class="container nav">
+      <div class="brand">
+        <img src="assets/logo.png" alt="TechMate logo">
+        <div class="brand-title">TechMate</div>
+      </div>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/privacy.html">Privacy</a></li>
+          <li><a href="/terms.html">Terms</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  
-  <main class="content">
-    <h1>Terms of Service</h1>
-    <p><em>Last Updated: August 2025</em></p>
-    <h2>1. Introduction</h2>
-    <p>These Terms govern your use of TechMate’s services. By booking or using our services, you agree to these Terms.</p>
-    <h2>2. Services</h2>
-    <p>We provide technology support including device setup, Wi‑Fi optimisation, cloud backup restoration, screen repairs, and basic IT lessons.</p>
-    <h2>3. Pricing & Payment</h2>
-    <p>Prices are listed on our website and may vary based on the service. Quotes are provided before work begins. Payment is due upon completion unless otherwise agreed.</p>
-    <h2>4. Bookings & Cancellations</h2>
-    <p>Cancellations should be made at least 24 hours before the appointment. Late cancellations may be subject to a fee.</p>
-    <h2>5. Customer Responsibilities</h2>
-    <ul><li>Ensure devices are backed up before repair or service.</li><li>Provide accurate information about issues.</li><li>Grant reasonable access to premises and equipment.</li></ul>
-    <h2>6. Liability</h2>
-    <p>TechMate is not responsible for indirect or consequential losses. Customers are responsible for backing up data prior to service.</p>
-    <h2>7. Complaints</h2>
-    <p>If you are unhappy with our service, please contact us. We will work to resolve issues promptly and fairly.</p>
-    <h2>8. Governing Law</h2>
-    <p>These Terms are governed by the laws of England and Wales.</p>
+  <main class="section">
+    <div class="container">
+      <h1>Terms of Service</h1>
+      <p><em>Last Updated: August 2025</em></p>
+<h3>Introduction</h3><p>By booking or using our services, you agree to these Terms.</p>
+<h3>Services</h3><p>Device setup, Wi‑Fi optimisation, cloud backup restoration, screen repairs, and 30‑min lessons.</p>
+<h3>Pricing & payment</h3><p>Prices shown on this website; quotes given before work begins. Payment due on completion unless agreed otherwise.</p>
+<h3>Bookings & cancellations</h3><p>Please cancel at least 24 hours in advance. Late cancellations may incur a fee.</p>
+<h3>Customer responsibilities</h3><ul><li>Back up your device before service</li><li>Provide accurate information</li><li>Provide safe access to premises/equipment</li></ul>
+<h3>Liability</h3><p>We are not liable for indirect or consequential losses. Customers are responsible for data backup prior to service.</p>
+    </div>
   </main>
-
   <footer>
-    <img src="assets/logo.png" alt="TechMate Logo" class="footer-logo">
-    <p><a href="/privacy.html">Privacy Policy</a> | <a href="/terms.html">Terms of Service</a> | <a href="#" onclick="openCookieSettings();return false;">Cookie Settings</a></p>
-    <p class="mini">Trust badges: DBS Checked • Fully Insured • Ombudsman • Checkatrade (joining)</p>
-    <p>© 2025 TechMate. All rights reserved.</p>
+    <div class="container foot">
+      <div class="brand"><img src="assets/logo.png" alt="TechMate logo"><div class="brand-title">TechMate</div></div>
+      <div class="mini">
+        <a href="/privacy.html">Privacy Policy</a> • <a href="/terms.html">Terms of Service</a> • <a href="#" onclick="openCookieSettings();return false;">Cookie Settings</a>
+        <br>© 2025 TechMate. Friendly fixes. Secure solutions.
+      </div>
+    </div>
   </footer>
   <button id="backToTop" aria-label="Back to top">↑</button>
   <script>
-    (function(){
-      var b=document.getElementById("backToTop");
-      function onScroll(){ b.style.display = window.scrollY>500 ? "block" : "none"; }
-      window.addEventListener("scroll", onScroll);
-      b.addEventListener("click", function(){ window.scrollTo({top:0, behavior:"smooth"}); });
-      onScroll();
-    })();
+    (function(){var b=document.getElementById("backToTop");function onScroll(){ b.style.display = window.scrollY>500 ? "block" : "none"; }window.addEventListener("scroll", onScroll);b.addEventListener("click", function(){ window.scrollTo({top:0, behavior:"smooth"}); });onScroll();})();
   </script>
   <script src="assets/cookie-consent.js"></script>
 </body>
