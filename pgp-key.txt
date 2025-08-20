@@ -1,0 +1,15 @@
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Comment: TechMate Demo Key (Not for production)
+
+-----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn2QwJ5uEclgtPCRiU4z9
+gHa45aU9EjjbbD3z+Tte1oRWTq8xCzj8VmF3rkZaavaWjesG7uXNpORWO/Fdhl+8
+0cqhAt+iOAlLnU/w0Ktf3fK7DOnVsdN1xBNonSf3vmG6aR4Bl/FiWvvkd7EtQOQT
+Nchm1X4sq9VHhbOrhbxp3sXs0W0MN2jyJloPFn2l3syBLv5TlxSHFB4SyMQ5pTy6
+jC2/mYMcLTyJ8sDf1rQE4ueEn8shfGvhSTcpYl12snLzDJzBhi6bMEdqjkXncW2I
+1SDrVX5oRSgdx14VKfo2Xf4cixkw/zxptOdMYuorx2KHn6b7Zr11bYZGZaQq9MZ2
+vQIDAQAB
+-----END PUBLIC KEY-----
+
+
+-----END PGP PUBLIC KEY BLOCK-----
